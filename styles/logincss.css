@@ -1,0 +1,152 @@
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0, 0));
+  padding: 10px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.A1 {
+  display: flex;
+  margin: 0px;
+  background: rgb(62, 19, 218);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  margin: 5px 0 0 0 ;
+}
+
+/* Text v liste*/
+nav a {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 0px 10px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: rgb(253, 40, 40);
+  transform: scale(1.1, 1.1);
+}
+
+.headerImg:hover {
+  filter: brightness(50%);
+  transform: scale(1.1);
+}
+
+.headerImg {
+  transition: 0.4s;
+}
+
+.login {
+  width: 400px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  opacity: 90%;
+}
+
+.login h1 {
+  position: relative;
+  bottom: 50px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 100%;
+}
+
+.login input {
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+  position: relative;
+  bottom: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(56, 56, 56);
+  transition: 0.2s;
+  display: flex;
+}
+
+.login input:hover {
+  transform: scale(1.03);
+}
+
+.login button {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  bottom: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 0);
+  transition: 0.3s;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login button:hover {
+  transform: scale(1.1);
+}
+
+.parallax {
+  min-height: 750px;
+  opacity: 90%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: black;
+  width: 100%;
+  height: 50px;
+}
+
+footer h1 {
+  color: white;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

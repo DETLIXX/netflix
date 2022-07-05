@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NEFLIX - Login</title>
+    <link rel="stylesheet" href="styles/logincss.css" />
+    <link rel="icon" href="/images/netflixLogo.png" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            class="headerImg"
+            src="images/netflix.png"
+            alt=""
+            style="width: 150px; height: auto"
+          />
+        </a>
+        <a href="index.html">Log in</a>
+      </nav>
+    </header>
+
+    <div
+      class="parallax"
+      style="background-image: url(/images/netflix-image-blure.jpg)"
+    ></div>
+
+    <div class="login">
+      <h1>Log in</h1>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Name"
+        value=""
+        maxlength="10"
+      />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        value=""
+        maxlength="16"
+      />
+
+      <button onclick="LoginUser()">LOG IN</button>
+      <script>
+        function LoginUser() {
+          var userName = document.getElementById("name").value;
+          var userPassword = document.getElementById("password").value;
+
+          if (userName == "admin" && userPassword == "0000") {
+            location.replace("./account.html");
+          }
+        }
+      </script>
+    </div>
+
+    <footer>
+      <div>
+        <h1>
+          Name and Pass is : admin:0000 (this site is copy of netflix and its
+          for education purpose)
+        </h1>
+        <h2></h2>
+      </div>
+    </footer>
+  </body>
+</html>
